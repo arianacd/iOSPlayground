@@ -2,18 +2,20 @@
 //: You can use a playground like a calculator. Type in the math problem you want solved and the results sidebar shows the answer, or the _result_, of the calculation.
 //:
 //: You can use the plus `+` and minus `-` signs for addition and subtraction, just as you’d expect:
-34 + 56 + 230
-
+34 + 0.5 + 230
+54 + 6
 1000 - 300
 
 //: For multiplication, use the asterisk `*` :
 3 * 100
+3 * 5
 //: For division, use the slash `/` :
 24 / 8
 22 / 7
-
+33 / 11
 //: For grouping, use parenthesis `( )` :
 (300 + 500 + 400) / 3
+(3 + 7) * 3
 //: - experiment:\
 //: Practice using the playground like a calculator.
 //: Edit some of the existing expressions and add a few of your own.

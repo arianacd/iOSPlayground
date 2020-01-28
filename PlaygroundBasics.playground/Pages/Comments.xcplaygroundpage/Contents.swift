@@ -8,6 +8,7 @@
 //: A comment starts with two slashes `//` :
 // This is a comment; it does not affect the code
 34 + 56 + 230
+// 4 + 6 * 4
 //: Because comments are ignored, no result is displayed in the results bar for that line of code.
 // 200 + 34 + 45
 //: - experiment:\
