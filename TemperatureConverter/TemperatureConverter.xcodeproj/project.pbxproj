@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25C3FF323EDB5EC007D5323 /* sky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25C3FF223EDB5EC007D5323 /* sky.jpeg */; };
 		D2A6447923EC4F4F00A21121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6447823EC4F4F00A21121 /* AppDelegate.swift */; };
 		D2A6447B23EC4F4F00A21121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6447A23EC4F4F00A21121 /* SceneDelegate.swift */; };
 		D2A6447D23EC4F4F00A21121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6447C23EC4F4F00A21121 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D25C3FF223EDB5EC007D5323 /* sky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky.jpeg; path = ../../../../../Downloads/sky.jpeg; sourceTree = "<group>"; };
 		D2A6447523EC4F4F00A21121 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A6447823EC4F4F00A21121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2A6447A23EC4F4F00A21121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				D2A6447C23EC4F4F00A21121 /* ViewController.swift */,
 				D2A6447E23EC4F4F00A21121 /* Main.storyboard */,
 				D2A6448123EC4F5100A21121 /* Assets.xcassets */,
+				D25C3FF223EDB5EC007D5323 /* sky.jpeg */,
 				D2A6448323EC4F5100A21121 /* LaunchScreen.storyboard */,
 				D2A6448623EC4F5100A21121 /* Info.plist */,
 			);
@@ -128,6 +131,7 @@
 				D2A6448523EC4F5100A21121 /* LaunchScreen.storyboard in Resources */,
 				D2A6448223EC4F5100A21121 /* Assets.xcassets in Resources */,
 				D2A6448023EC4F4F00A21121 /* Main.storyboard in Resources */,
+				D25C3FF323EDB5EC007D5323 /* sky.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
