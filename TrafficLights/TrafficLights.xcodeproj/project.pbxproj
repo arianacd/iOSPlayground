@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D25C3FF323EDB5EC007D5323 /* sky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D25C3FF223EDB5EC007D5323 /* sky.jpeg */; };
-		D2A6447923EC4F4F00A21121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6447823EC4F4F00A21121 /* AppDelegate.swift */; };
-		D2A6447B23EC4F4F00A21121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6447A23EC4F4F00A21121 /* SceneDelegate.swift */; };
-		D2A6447D23EC4F4F00A21121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6447C23EC4F4F00A21121 /* ViewController.swift */; };
-		D2A6448023EC4F4F00A21121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A6447E23EC4F4F00A21121 /* Main.storyboard */; };
-		D2A6448223EC4F5100A21121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A6448123EC4F5100A21121 /* Assets.xcassets */; };
-		D2A6448523EC4F5100A21121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A6448323EC4F5100A21121 /* LaunchScreen.storyboard */; };
+		D2A3FF6823F5DA240069D4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A3FF6723F5DA240069D4E9 /* AppDelegate.swift */; };
+		D2A3FF6A23F5DA240069D4E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A3FF6923F5DA240069D4E9 /* SceneDelegate.swift */; };
+		D2A3FF6C23F5DA240069D4E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A3FF6B23F5DA240069D4E9 /* ViewController.swift */; };
+		D2A3FF6F23F5DA240069D4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A3FF6D23F5DA240069D4E9 /* Main.storyboard */; };
+		D2A3FF7123F5DA250069D4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A3FF7023F5DA250069D4E9 /* Assets.xcassets */; };
+		D2A3FF7423F5DA250069D4E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A3FF7223F5DA250069D4E9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D25C3FF223EDB5EC007D5323 /* sky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky.jpeg; path = ../../../../../Downloads/sky.jpeg; sourceTree = "<group>"; };
-		D2A6447523EC4F4F00A21121 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A6447823EC4F4F00A21121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2A6447A23EC4F4F00A21121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2A6447C23EC4F4F00A21121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2A6447F23EC4F4F00A21121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2A6448123EC4F5100A21121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2A6448423EC4F5100A21121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D2A6448623EC4F5100A21121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A3FF6423F5DA240069D4E9 /* TrafficLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A3FF6723F5DA240069D4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2A3FF6923F5DA240069D4E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2A3FF6B23F5DA240069D4E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2A3FF6E23F5DA240069D4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2A3FF7023F5DA250069D4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A3FF7323F5DA250069D4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2A3FF7523F5DA250069D4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D2A6447223EC4F4F00A21121 /* Frameworks */ = {
+		D2A3FF6123F5DA240069D4E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D2A6446C23EC4F4F00A21121 = {
+		D2A3FF5B23F5DA240069D4E9 = {
 			isa = PBXGroup;
 			children = (
-				D2A6447723EC4F4F00A21121 /* TemperatureConverter */,
-				D2A6447623EC4F4F00A21121 /* Products */,
+				D2A3FF6623F5DA240069D4E9 /* TrafficLights */,
+				D2A3FF6523F5DA240069D4E9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D2A6447623EC4F4F00A21121 /* Products */ = {
+		D2A3FF6523F5DA240069D4E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2A6447523EC4F4F00A21121 /* TemperatureConverter.app */,
+				D2A3FF6423F5DA240069D4E9 /* TrafficLights.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2A6447723EC4F4F00A21121 /* TemperatureConverter */ = {
+		D2A3FF6623F5DA240069D4E9 /* TrafficLights */ = {
 			isa = PBXGroup;
 			children = (
-				D2A6447823EC4F4F00A21121 /* AppDelegate.swift */,
-				D2A6447A23EC4F4F00A21121 /* SceneDelegate.swift */,
-				D2A6447C23EC4F4F00A21121 /* ViewController.swift */,
-				D2A6447E23EC4F4F00A21121 /* Main.storyboard */,
-				D2A6448123EC4F5100A21121 /* Assets.xcassets */,
-				D25C3FF223EDB5EC007D5323 /* sky.jpeg */,
-				D2A6448323EC4F5100A21121 /* LaunchScreen.storyboard */,
-				D2A6448623EC4F5100A21121 /* Info.plist */,
+				D2A3FF6723F5DA240069D4E9 /* AppDelegate.swift */,
+				D2A3FF6923F5DA240069D4E9 /* SceneDelegate.swift */,
+				D2A3FF6B23F5DA240069D4E9 /* ViewController.swift */,
+				D2A3FF6D23F5DA240069D4E9 /* Main.storyboard */,
+				D2A3FF7023F5DA250069D4E9 /* Assets.xcassets */,
+				D2A3FF7223F5DA250069D4E9 /* LaunchScreen.storyboard */,
+				D2A3FF7523F5DA250069D4E9 /* Info.plist */,
 			);
-			path = TemperatureConverter;
+			path = TrafficLights;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2A6447423EC4F4F00A21121 /* TemperatureConverter */ = {
+		D2A3FF6323F5DA240069D4E9 /* TrafficLights */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2A6448923EC4F5100A21121 /* Build configuration list for PBXNativeTarget "TemperatureConverter" */;
+			buildConfigurationList = D2A3FF7823F5DA250069D4E9 /* Build configuration list for PBXNativeTarget "TrafficLights" */;
 			buildPhases = (
-				D2A6447123EC4F4F00A21121 /* Sources */,
-				D2A6447223EC4F4F00A21121 /* Frameworks */,
-				D2A6447323EC4F4F00A21121 /* Resources */,
+				D2A3FF6023F5DA240069D4E9 /* Sources */,
+				D2A3FF6123F5DA240069D4E9 /* Frameworks */,
+				D2A3FF6223F5DA240069D4E9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TemperatureConverter;
-			productName = TemperatureConverter;
-			productReference = D2A6447523EC4F4F00A21121 /* TemperatureConverter.app */;
+			name = TrafficLights;
+			productName = TrafficLights;
+			productReference = D2A3FF6423F5DA240069D4E9 /* TrafficLights.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D2A6446D23EC4F4F00A21121 /* Project object */ = {
+		D2A3FF5C23F5DA240069D4E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Ariana;
 				TargetAttributes = {
-					D2A6447423EC4F4F00A21121 = {
+					D2A3FF6323F5DA240069D4E9 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = D2A6447023EC4F4F00A21121 /* Build configuration list for PBXProject "TemperatureConverter" */;
+			buildConfigurationList = D2A3FF5F23F5DA240069D4E9 /* Build configuration list for PBXProject "TrafficLights" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = D2A6446C23EC4F4F00A21121;
-			productRefGroup = D2A6447623EC4F4F00A21121 /* Products */;
+			mainGroup = D2A3FF5B23F5DA240069D4E9;
+			productRefGroup = D2A3FF6523F5DA240069D4E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2A6447423EC4F4F00A21121 /* TemperatureConverter */,
+				D2A3FF6323F5DA240069D4E9 /* TrafficLights */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D2A6447323EC4F4F00A21121 /* Resources */ = {
+		D2A3FF6223F5DA240069D4E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A6448523EC4F5100A21121 /* LaunchScreen.storyboard in Resources */,
-				D2A6448223EC4F5100A21121 /* Assets.xcassets in Resources */,
-				D2A6448023EC4F4F00A21121 /* Main.storyboard in Resources */,
-				D25C3FF323EDB5EC007D5323 /* sky.jpeg in Resources */,
+				D2A3FF7423F5DA250069D4E9 /* LaunchScreen.storyboard in Resources */,
+				D2A3FF7123F5DA250069D4E9 /* Assets.xcassets in Resources */,
+				D2A3FF6F23F5DA240069D4E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D2A6447123EC4F4F00A21121 /* Sources */ = {
+		D2A3FF6023F5DA240069D4E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A6447D23EC4F4F00A21121 /* ViewController.swift in Sources */,
-				D2A6447923EC4F4F00A21121 /* AppDelegate.swift in Sources */,
-				D2A6447B23EC4F4F00A21121 /* SceneDelegate.swift in Sources */,
+				D2A3FF6C23F5DA240069D4E9 /* ViewController.swift in Sources */,
+				D2A3FF6823F5DA240069D4E9 /* AppDelegate.swift in Sources */,
+				D2A3FF6A23F5DA240069D4E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2A6447E23EC4F4F00A21121 /* Main.storyboard */ = {
+		D2A3FF6D23F5DA240069D4E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2A6447F23EC4F4F00A21121 /* Base */,
+				D2A3FF6E23F5DA240069D4E9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D2A6448323EC4F5100A21121 /* LaunchScreen.storyboard */ = {
+		D2A3FF7223F5DA250069D4E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2A6448423EC4F5100A21121 /* Base */,
+				D2A3FF7323F5DA250069D4E9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D2A6448723EC4F5100A21121 /* Debug */ = {
+		D2A3FF7623F5DA250069D4E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		D2A6448823EC4F5100A21121 /* Release */ = {
+		D2A3FF7723F5DA250069D4E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,36 +280,34 @@
 			};
 			name = Release;
 		};
-		D2A6448A23EC4F5100A21121 /* Debug */ = {
+		D2A3FF7923F5DA250069D4E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L6NBMBB92C;
-				INFOPLIST_FILE = TemperatureConverter/Info.plist;
+				INFOPLIST_FILE = TrafficLights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ssfs.TemperatureConverter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ssfs.TrafficLights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D2A6448B23EC4F5100A21121 /* Release */ = {
+		D2A3FF7A23F5DA250069D4E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L6NBMBB92C;
-				INFOPLIST_FILE = TemperatureConverter/Info.plist;
+				INFOPLIST_FILE = TrafficLights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ssfs.TemperatureConverter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ssfs.TrafficLights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2A6447023EC4F4F00A21121 /* Build configuration list for PBXProject "TemperatureConverter" */ = {
+		D2A3FF5F23F5DA240069D4E9 /* Build configuration list for PBXProject "TrafficLights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2A6448723EC4F5100A21121 /* Debug */,
-				D2A6448823EC4F5100A21121 /* Release */,
+				D2A3FF7623F5DA250069D4E9 /* Debug */,
+				D2A3FF7723F5DA250069D4E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2A6448923EC4F5100A21121 /* Build configuration list for PBXNativeTarget "TemperatureConverter" */ = {
+		D2A3FF7823F5DA250069D4E9 /* Build configuration list for PBXNativeTarget "TrafficLights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2A6448A23EC4F5100A21121 /* Debug */,
-				D2A6448B23EC4F5100A21121 /* Release */,
+				D2A3FF7923F5DA250069D4E9 /* Debug */,
+				D2A3FF7A23F5DA250069D4E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D2A6446D23EC4F4F00A21121 /* Project object */;
+	rootObject = D2A3FF5C23F5DA240069D4E9 /* Project object */;
 }
