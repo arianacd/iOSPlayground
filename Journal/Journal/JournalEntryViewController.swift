@@ -8,17 +8,18 @@
 
 import UIKit
 
-class JournalEntryViewController: UITableViewController {
+class JournalEntryViewController: UIViewController {
 
     @IBOutlet weak var journalEntryContents: UITextView!
     var journalEntry: JournalEntry?
     override func viewDidLoad() {
-        super.viewDidLoad()
-        if let journalEntry = journalEntry {
-            journalEntryContents.text = journalEntry.contents
-            navigationItem.title = journalEntry.description
-        }
+       super.viewDidLoad()
+              if let journalEntry = journalEntry {
+                  journalEntryContents.text = journalEntry.contents
+                  navigationItem.title = journalEntry.description
+              }
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,16 +29,7 @@ class JournalEntryViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

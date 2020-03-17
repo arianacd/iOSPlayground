@@ -10,7 +10,7 @@
         <!--Journal Entry View Controller-->
         <scene sceneID="JlP-iH-4cU">
             <objects>
-                <viewController title="Journal Entry View Controller" id="yrq-vX-Ayn" customClass="JournalEntryViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Journal Entry View Controller" id="yrq-vX-Ayn" customClass="JournalEntryViewController" customModule="Journal" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wch-L8-LYD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
