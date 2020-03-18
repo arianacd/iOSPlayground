@@ -41,6 +41,36 @@
             </objects>
             <point key="canvasLocation" x="-1601" y="46"/>
         </scene>
+        <!--NewJournalEntryView Controller-->
+        <scene sceneID="tnT-nE-HLh">
+            <objects>
+                <viewController title="NewJournalEntryView Controller" id="rnM-kS-1MV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CVZ-Vv-dqW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fou-z5-FG7">
+                                <rect key="frame" x="10" y="10" width="394" height="398"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fou-z5-FG7" firstAttribute="leading" secondItem="igX-HE-Mew" secondAttribute="leading" constant="10" id="MMD-cU-i86"/>
+                            <constraint firstItem="igX-HE-Mew" firstAttribute="bottom" secondItem="Fou-z5-FG7" secondAttribute="bottom" constant="400" id="Nb0-vc-x7a"/>
+                            <constraint firstItem="Fou-z5-FG7" firstAttribute="top" secondItem="igX-HE-Mew" secondAttribute="top" constant="10" id="U4O-YN-aUj"/>
+                            <constraint firstItem="igX-HE-Mew" firstAttribute="trailing" secondItem="Fou-z5-FG7" secondAttribute="trailing" constant="10" id="kDz-c9-Qv8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="igX-HE-Mew"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2r-X7-xSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="860"/>
+        </scene>
         <!--My Journal-->
         <scene sceneID="8LZ-dA-R1m">
             <objects>
@@ -67,7 +97,13 @@
                             <outlet property="delegate" destination="aOH-sf-h2Z" id="UZw-zJ-93d"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Journal" id="QyJ-qM-sh4"/>
+                    <navigationItem key="navigationItem" title="My Journal" id="QyJ-qM-sh4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="mJ9-iK-xfV">
+                            <connections>
+                                <segue destination="rnM-kS-1MV" kind="presentation" id="KDs-xF-mwr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8Q-Fn-pMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
