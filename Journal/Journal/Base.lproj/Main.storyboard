@@ -44,25 +44,40 @@
         <!--NewJournalEntryView Controller-->
         <scene sceneID="tnT-nE-HLh">
             <objects>
-                <viewController title="NewJournalEntryView Controller" id="rnM-kS-1MV" sceneMemberID="viewController">
+                <viewController title="NewJournalEntryView Controller" id="rnM-kS-1MV" customClass="NewJournalEntryViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CVZ-Vv-dqW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fou-z5-FG7">
-                                <rect key="frame" x="10" y="10" width="394" height="398"/>
+                                <rect key="frame" x="10" y="60" width="394" height="348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlM-6Q-DL4">
+                                <rect key="frame" x="1" y="5" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="New Journal Entry" id="xBd-w5-B6T">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jeH-Kc-jMn">
+                                            <connections>
+                                                <action selector="Cancel:" destination="rnM-kS-1MV" id="HJi-41-POK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Fou-z5-FG7" firstAttribute="leading" secondItem="igX-HE-Mew" secondAttribute="leading" constant="10" id="MMD-cU-i86"/>
-                            <constraint firstItem="igX-HE-Mew" firstAttribute="bottom" secondItem="Fou-z5-FG7" secondAttribute="bottom" constant="400" id="Nb0-vc-x7a"/>
-                            <constraint firstItem="Fou-z5-FG7" firstAttribute="top" secondItem="igX-HE-Mew" secondAttribute="top" constant="10" id="U4O-YN-aUj"/>
-                            <constraint firstItem="igX-HE-Mew" firstAttribute="trailing" secondItem="Fou-z5-FG7" secondAttribute="trailing" constant="10" id="kDz-c9-Qv8"/>
+                            <constraint firstItem="Fou-z5-FG7" firstAttribute="leading" secondItem="igX-HE-Mew" secondAttribute="leading" constant="10" id="3if-wF-or4"/>
+                            <constraint firstItem="Fou-z5-FG7" firstAttribute="top" secondItem="igX-HE-Mew" secondAttribute="top" constant="60" id="A3O-iP-fHL"/>
+                            <constraint firstItem="igX-HE-Mew" firstAttribute="bottom" secondItem="Fou-z5-FG7" secondAttribute="bottom" constant="400" id="TIq-yY-l7C"/>
+                            <constraint firstItem="igX-HE-Mew" firstAttribute="trailing" secondItem="Fou-z5-FG7" secondAttribute="trailing" constant="10" id="b8R-pX-bfN"/>
+                            <constraint firstItem="tlM-6Q-DL4" firstAttribute="trailing" secondItem="igX-HE-Mew" secondAttribute="trailing" constant="1" id="i4J-8T-1OT"/>
+                            <constraint firstItem="tlM-6Q-DL4" firstAttribute="leading" secondItem="igX-HE-Mew" secondAttribute="leading" constant="1" id="o9X-Z9-ERM"/>
+                            <constraint firstItem="tlM-6Q-DL4" firstAttribute="top" secondItem="igX-HE-Mew" secondAttribute="top" constant="5" id="xtQ-bv-4jb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="igX-HE-Mew"/>
                     </view>
@@ -88,7 +103,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="yrq-vX-Ayn" kind="show" id="iGL-0R-Fii"/>
+                                    <segue destination="yrq-vX-Ayn" kind="show" identifier="journalEntry" id="iGL-0R-Fii"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
