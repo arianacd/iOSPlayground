@@ -65,6 +65,12 @@
                                                 <action selector="Cancel:" destination="rnM-kS-1MV" id="HJi-41-POK"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lDB-OM-Un2">
+                                            <connections>
+                                                <action selector="Cancel:" destination="rnM-kS-1MV" id="alN-no-LAK"/>
+                                                <segue destination="7pf-9X-q9z" kind="unwind" unwindAction="doneWithSegue:" id="lpD-tf-dBA"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -81,8 +87,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="igX-HE-Mew"/>
                     </view>
+                    <connections>
+                        <outlet property="journalEntryContents" destination="Fou-z5-FG7" id="x5m-bB-kWH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2r-X7-xSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7pf-9X-q9z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-652" y="860"/>
         </scene>
@@ -115,7 +125,7 @@
                     <navigationItem key="navigationItem" title="My Journal" id="QyJ-qM-sh4">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="mJ9-iK-xfV">
                             <connections>
-                                <segue destination="rnM-kS-1MV" kind="presentation" id="KDs-xF-mwr"/>
+                                <segue destination="rnM-kS-1MV" kind="presentation" identifier="newJournalEntry" id="KDs-xF-mwr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
