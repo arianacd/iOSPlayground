@@ -7,20 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Palettes-->
         <scene sceneID="Opf-Wu-SK5">
             <objects>
-                <tableViewController id="GZl-sX-gOX" sceneMemberID="viewController">
+                <tableViewController id="GZl-sX-gOX" customClass="ColorsTableViewController" customModule="FindYourColors" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FOW-AA-U8Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VdI-g6-4Mg">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="VdI-g6-4Mg">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VdI-g6-4Mg" id="02X-01-clH">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -30,17 +30,18 @@
                             <outlet property="delegate" destination="GZl-sX-gOX" id="LLv-xU-Ymv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eRh-Wf-IpB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wb5-nz-xmP">
+                    <navigationItem key="navigationItem" title="Palettes" id="VKb-Ja-3fW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xmM-4L-F0d">
                             <connections>
-                                <segue destination="eYA-lR-MEQ" kind="presentation" id="cX8-9R-mhe"/>
+                                <action selector="newpalette:" destination="GZl-sX-gOX" id="ZIV-6W-pVA"/>
+                                <segue destination="eYA-lR-MEQ" kind="presentation" id="24A-tb-vJa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBS-je-iHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.0434782608696" y="127.90178571428571"/>
+            <point key="canvasLocation" x="1093" y="128"/>
         </scene>
         <!--NewPalette-->
         <scene sceneID="D5C-Y1-1bd">
@@ -69,7 +70,7 @@
                                 <items>
                                     <navigationItem id="Ia3-sy-59Z">
                                         <nil key="title"/>
-                                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Palette Name" textAlignment="natural" minimumFontSize="17" id="pfu-aO-FZa">
+                                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Palette Name" textAlignment="natural" minimumFontSize="17" id="pfu-aO-FZa">
                                             <rect key="frame" x="115.5" y="11" width="183.5" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration" hint="asdas"/>

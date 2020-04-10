@@ -17,6 +17,7 @@
 		FF757505243CB6D900B35044 /* FindYourColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF757504243CB6D900B35044 /* FindYourColorsUITests.swift */; };
 		FF7ED8CA243E246100DAB467 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED8C9243E246100DAB467 /* Palette.swift */; };
 		FF8FC851243F7EDF00D1D6DB /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC850243F7EDF00D1D6DB /* ColorsTableViewController.swift */; };
+		FFD432E0243FF21C009E41E5 /* NewPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD432DF243FF21C009E41E5 /* NewPaletteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FF757506243CB6D900B35044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF7ED8C9243E246100DAB467 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		FF8FC850243F7EDF00D1D6DB /* ColorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableViewController.swift; sourceTree = "<group>"; };
+		FFD432DF243FF21C009E41E5 /* NewPaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaletteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FF7574ED243CB6D800B35044 /* LaunchScreen.storyboard */,
 				FF7574F0243CB6D800B35044 /* Info.plist */,
 				FF8FC850243F7EDF00D1D6DB /* ColorsTableViewController.swift */,
+				FFD432DF243FF21C009E41E5 /* NewPaletteViewController.swift */,
 			);
 			path = FindYourColors;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FF7574E3243CB6D300B35044 /* AppDelegate.swift in Sources */,
 				FF7574E5243CB6D300B35044 /* SceneDelegate.swift in Sources */,
 				FF7ED8CA243E246100DAB467 /* Palette.swift in Sources */,
+				FFD432E0243FF21C009E41E5 /* NewPaletteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

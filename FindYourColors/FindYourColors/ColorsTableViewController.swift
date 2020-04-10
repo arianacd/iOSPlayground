@@ -9,9 +9,18 @@
 import UIKit
 
 class ColorsTableViewController: UITableViewController {
+    let cellReuseIdentifier = "paletteItemCell"
+       let journalEntrySegueIdentifier = "paletteItem"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+       var palette = Palette()
+
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           for index in 0...3 {
+               palette.entries.append(JournalEntry(date: Date(), contents: "Contents for entry \(index)"))
+           }
+       }
+    
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -21,17 +30,42 @@ class ColorsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return palette.count
     }
 
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JournalEntryCell", for: indexPath)
+        if let label = cell.textLabel,
+            let entry = palette.entry(index: indexPath.row) {
+            label.text = "\(entry)"
+        }
+
+        // Configure the cell...
+
+        return cell
+    }
+    
+  
+    
+    
+    
+    
+    
+    
+
+    @IBAction func newpalette(segue: UIStoryboardSegue) {
+        let newPalette = segue.source as! NewPaletteViewController
+        newPalette.entries.append(Palette(name: "Ariana"))
+        tableView.reloadData()
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
