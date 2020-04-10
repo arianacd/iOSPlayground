@@ -9,16 +9,14 @@
 import UIKit
 
 class ColorsTableViewController: UITableViewController {
-    let cellReuseIdentifier = "paletteItemCell"
-       let journalEntrySegueIdentifier = "paletteItem"
+    let cellReuseIdentifier = "paletteEntryCell"
+    let paletteEntrySegueIdentifier = "paletteItem"
+    
+    var palettes = [Palette(name: "Room", colors: [UIColor(red: 0.1, green: 0.5, blue: 0.75, alpha: 1.0)]), Palette(name: "Kitchen", colors: [UIColor(red: 0.4, green: 0.3, blue: 0.4, alpha: 1.0), UIColor(red: 0.6, green: 0.7, blue: 0.8, alpha: 1.0)])]
 
-       var palette = Palette()
-
-       override func viewDidLoad() {
-           super.viewDidLoad()
-           for index in 0...3 {
-               palette.entries.append(JournalEntry(date: Date(), contents: "Contents for entry \(index)"))
-           }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
        }
     
 
@@ -27,7 +25,7 @@ class ColorsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
+    
 
     // MARK: - Table view data source
     
@@ -37,16 +35,13 @@ class ColorsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return palette.count
+        return palettes.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "JournalEntryCell", for: indexPath)
-        if let label = cell.textLabel,
-            let entry = palette.entry(index: indexPath.row) {
-            label.text = "\(entry)"
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "paletteEntryCell", for: indexPath)
+        cell.textLabel?.text = palettes[indexPath.row].name
 
         // Configure the cell...
 
@@ -61,11 +56,11 @@ class ColorsTableViewController: UITableViewController {
     
     
 
-    @IBAction func newpalette(segue: UIStoryboardSegue) {
-        let newPalette = segue.source as! NewPaletteViewController
-        newPalette.entries.append(Palette(name: "Ariana"))
-        tableView.reloadData()
-    }
+//    @IBAction func newpalette(segue: UIStoryboardSegue) {
+//        let newPalette = segue.source as! NewPaletteViewController
+//        newPalette.entries.append(Palette(name: "Ariana"))
+//        tableView.reloadData()
+//    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

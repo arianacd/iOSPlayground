@@ -11,11 +11,11 @@ import UIKit
 class NewPaletteViewController: UIViewController {
     
     @IBOutlet weak var paletteContents: UITextView!
-       var paletteItem: Palette?
-       override func viewDidLoad() {
-          super.viewDidLoad()
-                 if let paletteItem = paletteItem {
-                     navigationItem.title = paletteItem.name
+    var paletteEntry: Palette?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+                if let paletteEntry = paletteEntry {
+                    navigationItem.title = paletteEntry.name
  
 
         // Do any additional setup after loading the view.

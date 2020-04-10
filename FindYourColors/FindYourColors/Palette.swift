@@ -13,16 +13,12 @@ struct Palette {
     var name: String
     var colors: [UIColor]
     
+    mutating func add(color: UIColor){
+        //var newColor = UIColor(red: 0.1, green: 0.4, blue: 0.5, alpha: 1.0)
+               colors.append(color)
+           }
+           
        
 }
-        mutating func add(entry: PaletteItem){
-            entries.append(entry)
-        }
-        func entry(index: Int) -> PaletteItem? {
-            if index >= 0 && index < entries.count {
-                return entries[index]
-            } else {
-                return nil
-            }
-        }
+       
     
