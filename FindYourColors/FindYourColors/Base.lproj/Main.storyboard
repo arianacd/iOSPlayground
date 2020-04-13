@@ -23,6 +23,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="u8g-Ck-bUf" kind="presentation" id="TtE-js-QeH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -42,6 +45,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBS-je-iHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1093" y="128"/>
+        </scene>
+        <!--NewPaletteViewController-->
+        <scene sceneID="OnM-pl-zCO">
+            <objects>
+                <viewController title="NewPaletteViewController" id="u8g-Ck-bUf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ABZ-T5-Omd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uR8-cf-sO9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="Title" id="9j2-V9-PMO"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="contents " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VT9-AK-NXV">
+                                <rect key="frame" x="10" y="66" width="394" height="732"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="732" id="nQK-aR-E6w"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4cl-jZ-kr9" firstAttribute="trailing" secondItem="VT9-AK-NXV" secondAttribute="trailing" constant="10" id="6zQ-qo-7Lx"/>
+                            <constraint firstItem="4cl-jZ-kr9" firstAttribute="bottom" secondItem="VT9-AK-NXV" secondAttribute="bottom" constant="10" id="Cw5-s2-8Vv"/>
+                            <constraint firstItem="VT9-AK-NXV" firstAttribute="top" secondItem="uR8-cf-sO9" secondAttribute="bottom" constant="10" id="FMd-um-Rm0"/>
+                            <constraint firstItem="VT9-AK-NXV" firstAttribute="leading" secondItem="4cl-jZ-kr9" secondAttribute="leading" constant="10" id="ziq-5C-jD0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4cl-jZ-kr9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmX-Fw-Rat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="878.57142857142856"/>
         </scene>
         <!--NewPalette-->
         <scene sceneID="D5C-Y1-1bd">
