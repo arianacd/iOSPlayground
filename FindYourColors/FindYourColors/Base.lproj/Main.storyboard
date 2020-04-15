@@ -49,7 +49,7 @@
         <!--NewPaletteViewController-->
         <scene sceneID="OnM-pl-zCO">
             <objects>
-                <viewController title="NewPaletteViewController" id="u8g-Ck-bUf" sceneMemberID="viewController">
+                <viewController title="NewPaletteViewController" id="u8g-Ck-bUf" customClass="NewPaletteViewController" customModule="FindYourColors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ABZ-T5-Omd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +80,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4cl-jZ-kr9"/>
                     </view>
+                    <connections>
+                        <outlet property="paletteContents" destination="VT9-AK-NXV" id="7Bp-1O-uf9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmX-Fw-Rat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

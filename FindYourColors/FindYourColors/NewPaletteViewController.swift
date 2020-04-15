@@ -16,11 +16,21 @@ class NewPaletteViewController: UIViewController {
         super.viewDidLoad()
                 if let paletteEntry = paletteEntry {
                     navigationItem.title = paletteEntry.name
+                    paletteContents.text = paletteEntry.name
  
 
         // Do any additional setup after loading the view.
     }
+        setViewColors()
+}
+        
     
+    func setViewColors() {
+        for color in paletteEntry!.colors {
+            //set the color of a view
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -32,5 +42,5 @@ class NewPaletteViewController: UIViewController {
     }
     */
 
-}
+
 }
