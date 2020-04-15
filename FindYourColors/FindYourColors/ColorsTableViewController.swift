@@ -112,13 +112,16 @@ class ColorsTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let NewPaletteViewController = segue.destination as? NewPaletteViewController,
-            let cell = sender as? UITableViewCell,
-            let indexPath = self.tableView.indexPath(for: cell),
-            let entry = palettes {
-            NewPaletteViewController.paletteEntry = entry
-            }
+        if segue.identifier == "showPalette" {
+            let newPaletteViewController = segue.destination as? NewPaletteViewController
+            let cell = (sender as? UITableViewCell)!
+            let indexPath = tableView.indexPath(for: cell)
+            let entry = palettes[indexPath!.row]
+            newPaletteViewController?.paletteEntry = entry
+            
         }
+            
+    }
 
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

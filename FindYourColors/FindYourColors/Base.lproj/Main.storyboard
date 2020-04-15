@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="u8g-Ck-bUf" kind="presentation" id="TtE-js-QeH"/>
+                                    <segue destination="u8g-Ck-bUf" kind="presentation" identifier="showPalette" id="TtE-js-QeH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
