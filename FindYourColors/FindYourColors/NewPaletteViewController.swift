@@ -24,13 +24,16 @@ class NewPaletteViewController: UIViewController {
         setViewColors()
 }
         
+    //@IBOutlet var colorviews: [UIView]!
     
     func setViewColors() {
         for color in paletteEntry!.colors {
+            view.backgroundColor = color
+            
             //set the color of a view
             
         }
-    }
+    
 
     /*
     // MARK: - Navigation
@@ -43,4 +46,4 @@ class NewPaletteViewController: UIViewController {
     */
 
 
-}
+
