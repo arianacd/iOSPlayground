@@ -10,6 +10,10 @@ import UIKit
 
 class NewPaletteViewController: UIViewController {
     
+var name: String = ""
+    
+       @IBOutlet weak var paletteName: UITextField!
+    
     @IBOutlet weak var paletteContents: UITextView!
     var paletteEntry: Palette?
     override func viewDidLoad() {
@@ -23,7 +27,16 @@ class NewPaletteViewController: UIViewController {
     }
         setViewColors()
 }
-        
+    
+    @IBAction func cancel(_ sender: Any) {
+    }
+    
+    
+    @IBAction func done(_ sender: Any) {
+    }
+    
+    
+    @IBOutlet var colorviews: [UIView]!
     //@IBOutlet var colorviews: [UIView]!
     
     func setViewColors() {

@@ -30,6 +30,12 @@ class ColorsTableViewController: UITableViewController {
       self.tableView.backgroundView = imageView
       //tableView.tableFooterView = UIView(frame: )
         imageView.contentMode = .scaleAspectFill
+      //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        //tableView.separatorStyle = .none
+
+        //tableView.separatorStyle = UITableViewCell.CellStyle.None
+
+
 
 
     }
@@ -57,6 +63,7 @@ class ColorsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "paletteEntryCell", for: indexPath)
         cell.textLabel?.text = palettes[indexPath.row].name
+        
 
         // Configure the cell...
 
