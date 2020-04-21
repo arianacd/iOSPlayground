@@ -12,9 +12,11 @@ class NewPaletteViewController: UIViewController {
     
     @IBOutlet var colorviews: [UIView]!
     
-    var name: String = ""
+//    var name: String = ""
+//    var newPalette: String = ""
+//    var palette = [String]()
+
     
-       @IBOutlet weak var paletteName: UITextField!
     
     @IBOutlet weak var paletteContents: UITextView!
     var paletteEntry: Palette?
@@ -32,15 +34,14 @@ class NewPaletteViewController: UIViewController {
         setViewColors()
 }
     
-    @IBAction func cancel(_ sender: Any) {
+   
+    
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "doneSegue" {
+//            name = paletteName.text!
+//        }
     }
-    
-    
-    @IBAction func done(_ sender: Any) {
-    }
-    
-    
-    
     func setViewColors() {
         let numColors: Int = paletteEntry!.colors.count
         for x in 0..<numColors {
@@ -68,5 +69,5 @@ class NewPaletteViewController: UIViewController {
 
 
 
-}
+
 

@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var name: String = ""
+       var newPalette: String = ""
+       var colors = [UIColor]()
+    
+    @IBOutlet weak var paletteName: UITextField!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func cancel(segue:UIStoryboardSegue) {
+    }
 }
 

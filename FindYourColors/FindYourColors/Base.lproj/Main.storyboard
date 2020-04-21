@@ -139,7 +139,7 @@
         <!--NewPalette-->
         <scene sceneID="D5C-Y1-1bd">
             <objects>
-                <viewController title="NewPalette" id="eYA-lR-MEQ" customClass="NewPaletteViewController" customModule="FindYourColors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NewPalette" id="eYA-lR-MEQ" customClass="ViewController" customModule="FindYourColors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0U4-Ht-5Xi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,11 +158,13 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ba6-XO-cTI">
                                             <connections>
                                                 <action selector="cancel:" destination="eYA-lR-MEQ" id="9Px-z4-Uou"/>
+                                                <segue destination="r9J-tH-jkt" kind="unwind" identifier="cancelSegue" unwindAction="cancelWithSegue:" id="tyd-fH-4Yv"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Jd6-nU-l0l">
                                             <connections>
                                                 <action selector="done:" destination="eYA-lR-MEQ" id="Dq4-7b-vx0"/>
+                                                <segue destination="r9J-tH-jkt" kind="unwind" identifier="doneSegue" unwindAction="doneWithSegue:" id="ftg-Dw-Rel"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -191,6 +193,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfz-1Y-y2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="r9J-tH-jkt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="127.90178571428571"/>
         </scene>
