@@ -10,7 +10,9 @@ import UIKit
 
 class NewPaletteViewController: UIViewController {
     
-var name: String = ""
+    @IBOutlet var colorviews: [UIView]!
+    
+    var name: String = ""
     
        @IBOutlet weak var paletteName: UITextField!
     
@@ -21,6 +23,8 @@ var name: String = ""
                 if let paletteEntry = paletteEntry {
                     navigationItem.title = paletteEntry.name
                     paletteContents.text = paletteEntry.name
+                    
+                    
  
 
         // Do any additional setup after loading the view.
@@ -36,12 +40,16 @@ var name: String = ""
     }
     
     
-    @IBOutlet var colorviews: [UIView]!
-    //@IBOutlet var colorviews: [UIView]!
     
     func setViewColors() {
-        for color in paletteEntry!.colors {
-            view.backgroundColor = color
+        let numColors: Int = paletteEntry!.colors.count
+        for x in 0..<numColors {
+            colorviews[x].backgroundColor = paletteEntry?.colors[x]
+            
+        }
+        
+            
+            //view.backgroundColor = color
             
             //set the color of a view
             
@@ -61,4 +69,4 @@ var name: String = ""
 
 
 }
-}
+

@@ -121,21 +121,20 @@
                         <viewLayoutGuide key="safeArea" id="4cl-jZ-kr9"/>
                     </view>
                     <connections>
-                        <outlet property="colorviews" destination="1wP-yd-Rp1" id="xOZ-aA-P4h"/>
                         <outlet property="paletteContents" destination="VT9-AK-NXV" id="7Bp-1O-uf9"/>
-                        <outletCollection property="colorviews" destination="1wP-yd-Rp1" collectionClass="NSMutableArray" id="QIF-bV-bb2"/>
-                        <outletCollection property="colorviews" destination="g58-Me-IPZ" collectionClass="NSMutableArray" id="MLC-KE-5a1"/>
-                        <outletCollection property="colorviews" destination="U2K-Se-hbb" collectionClass="NSMutableArray" id="I5H-SP-kVi"/>
-                        <outletCollection property="colorviews" destination="bQn-zK-czf" collectionClass="NSMutableArray" id="c2L-lC-7aF"/>
-                        <outletCollection property="colorviews" destination="SRD-KL-exd" collectionClass="NSMutableArray" id="7G6-c4-24H"/>
-                        <outletCollection property="colorviews" destination="Yhp-fz-SqG" collectionClass="NSMutableArray" id="syW-W7-w1F"/>
-                        <outletCollection property="colorviews" destination="Rhf-fd-tMg" collectionClass="NSMutableArray" id="29u-dc-fcf"/>
-                        <outletCollection property="colorviews" destination="A4U-uD-jl6" collectionClass="NSMutableArray" id="ds3-ik-US8"/>
+                        <outletCollection property="colorviews" destination="1wP-yd-Rp1" collectionClass="NSMutableArray" id="iNF-tF-GrQ"/>
+                        <outletCollection property="colorviews" destination="g58-Me-IPZ" collectionClass="NSMutableArray" id="i08-YB-gFV"/>
+                        <outletCollection property="colorviews" destination="U2K-Se-hbb" collectionClass="NSMutableArray" id="Am4-SO-YCs"/>
+                        <outletCollection property="colorviews" destination="bQn-zK-czf" collectionClass="NSMutableArray" id="aiO-HF-8mc"/>
+                        <outletCollection property="colorviews" destination="SRD-KL-exd" collectionClass="NSMutableArray" id="qXH-KG-jFm"/>
+                        <outletCollection property="colorviews" destination="Yhp-fz-SqG" collectionClass="NSMutableArray" id="orN-p1-t1M"/>
+                        <outletCollection property="colorviews" destination="Rhf-fd-tMg" collectionClass="NSMutableArray" id="BOd-wd-kHw"/>
+                        <outletCollection property="colorviews" destination="A4U-uD-jl6" collectionClass="NSMutableArray" id="vhn-wY-8Ff"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmX-Fw-Rat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092.753623188406" y="878.57142857142856"/>
+            <point key="canvasLocation" x="1093" y="851"/>
         </scene>
         <!--NewPalette-->
         <scene sceneID="D5C-Y1-1bd">
