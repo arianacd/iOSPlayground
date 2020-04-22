@@ -37,7 +37,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xmM-4L-F0d">
                             <connections>
                                 <action selector="newpalette:" destination="GZl-sX-gOX" id="ZIV-6W-pVA"/>
-                                <segue destination="eYA-lR-MEQ" kind="presentation" id="24A-tb-vJa"/>
+                                <segue destination="eYA-lR-MEQ" kind="presentation" identifier="addNewPalette" id="24A-tb-vJa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -163,8 +163,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Jd6-nU-l0l">
                                             <connections>
-                                                <action selector="done:" destination="eYA-lR-MEQ" id="Dq4-7b-vx0"/>
-                                                <segue destination="r9J-tH-jkt" kind="unwind" identifier="doneSegue" unwindAction="doneWithSegue:" id="ftg-Dw-Rel"/>
+                                                <action selector="done:" destination="eYA-lR-MEQ" id="VqI-7L-9CG"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -189,6 +188,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="if9-jb-t6i"/>
                     <connections>
+                        <outlet property="colorPicker" destination="41V-ur-Qas" id="7Oo-Qy-qS5"/>
                         <outlet property="paletteName" destination="IKb-Cs-maa" id="Beb-hh-n4K"/>
                     </connections>
                 </viewController>

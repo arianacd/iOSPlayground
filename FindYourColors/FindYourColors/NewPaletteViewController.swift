@@ -41,7 +41,7 @@ class NewPaletteViewController: UIViewController {
 //        if segue.identifier == "doneSegue" {
 //            name = paletteName.text!
 //        }
-    }
+//    }
     func setViewColors() {
         let numColors: Int = paletteEntry!.colors.count
         for x in 0..<numColors {
@@ -71,3 +71,4 @@ class NewPaletteViewController: UIViewController {
 
 
 
+}

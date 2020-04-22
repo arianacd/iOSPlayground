@@ -13,7 +13,12 @@ import UIKit
 //self.tableView.backgroundView = imageView
 
 
-class ColorsTableViewController: UITableViewController {
+class ColorsTableViewController: UITableViewController, PaletteDelegate {
+    func addNewPalette(palette: Palette) {
+        palettes.append(palette)
+        tableView.reloadData()
+    }
+    
     let cellReuseIdentifier = "paletteEntryCell"
     let paletteEntrySegueIdentifier = "paletteItem"
     
@@ -78,18 +83,7 @@ class ColorsTableViewController: UITableViewController {
     
     
     
-       
-       
-       @IBAction func done(segue:UIStoryboardSegue) {
-           let paletteDetail = segue.source as! NewPaletteViewController
-           newPaletteName = paletteDetail.name
-           colors.append(newPaletteName)
-           tableView.reloadData()
-           
-           
-           }
-       
-    
+  
 
 //    @IBAction func newpalette(segue: UIStoryboardSegue) {
 //        let newPalette = segue.source as! NewPaletteViewController
@@ -155,7 +149,10 @@ class ColorsTableViewController: UITableViewController {
             newPaletteViewController?.paletteEntry = entry
             
         }
-            
+        else if segue.identifier == "addNewPalette" {
+            let destinationVC = segue.destination as? ViewController
+            destinationVC?.delegate = self
+        }
     }
 
         // Get the new view controller using segue.destination.

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var paletteName: UITextField!
 
+    var delegate: PaletteDelegate?
     
     
     override func viewDidLoad() {
@@ -24,6 +25,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func cancel(segue:UIStoryboardSegue) {
+    }
+    @IBAction func done(_ sender: UIBarButtonItem) {
+        delegate?.addNewPalette(palette: Palette(name: paletteName.text!, colors: [UIColor(red: 0.4, green: 0.3, blue: 0.8, alpha: 1.0)]))
+        dismiss(animated: true, completion: nil)
     }
 }
 
