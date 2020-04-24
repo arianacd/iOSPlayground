@@ -16,10 +16,10 @@
 		FF7574FA243CB6D900B35044 /* FindYourColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7574F9243CB6D900B35044 /* FindYourColorsTests.swift */; };
 		FF757505243CB6D900B35044 /* FindYourColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF757504243CB6D900B35044 /* FindYourColorsUITests.swift */; };
 		FF7ED8CA243E246100DAB467 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED8C9243E246100DAB467 /* Palette.swift */; };
+		FF82C3772453120E00907704 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82C3762453120E00907704 /* ColorPicker.swift */; };
 		FF8FC851243F7EDF00D1D6DB /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC850243F7EDF00D1D6DB /* ColorsTableViewController.swift */; };
 		FFD432E0243FF21C009E41E5 /* NewPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD432DF243FF21C009E41E5 /* NewPaletteViewController.swift */; };
 		FFD6325E2450BD8000BB47C8 /* PaletteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6325D2450BD8000BB47C8 /* PaletteDelegate.swift */; };
-		FFD632602450C4CA00BB47C8 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6325F2450C4CA00BB47C8 /* ColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		FF757504243CB6D900B35044 /* FindYourColorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourColorsUITests.swift; sourceTree = "<group>"; };
 		FF757506243CB6D900B35044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF7ED8C9243E246100DAB467 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		FF82C3762453120E00907704 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		FF8FC850243F7EDF00D1D6DB /* ColorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableViewController.swift; sourceTree = "<group>"; };
 		FFD432DF243FF21C009E41E5 /* NewPaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaletteViewController.swift; sourceTree = "<group>"; };
 		FFD6325D2450BD8000BB47C8 /* PaletteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteDelegate.swift; sourceTree = "<group>"; };
-		FFD6325F2450C4CA00BB47C8 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 				FF7574E2243CB6D300B35044 /* AppDelegate.swift */,
 				FF7574E4243CB6D300B35044 /* SceneDelegate.swift */,
 				FF7574E6243CB6D300B35044 /* ViewController.swift */,
-				FFD6325F2450C4CA00BB47C8 /* ColorPicker.swift */,
 				FF7574E8243CB6D300B35044 /* Main.storyboard */,
+				FF82C3762453120E00907704 /* ColorPicker.swift */,
 				FF7ED8C9243E246100DAB467 /* Palette.swift */,
 				FF7574EB243CB6D800B35044 /* Assets.xcassets */,
 				FF7574ED243CB6D800B35044 /* LaunchScreen.storyboard */,
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8FC851243F7EDF00D1D6DB /* ColorsTableViewController.swift in Sources */,
-				FFD632602450C4CA00BB47C8 /* ColorPicker.swift in Sources */,
+				FF82C3772453120E00907704 /* ColorPicker.swift in Sources */,
 				FF7574E7243CB6D300B35044 /* ViewController.swift in Sources */,
 				FF7574E3243CB6D300B35044 /* AppDelegate.swift in Sources */,
 				FF7574E5243CB6D300B35044 /* SceneDelegate.swift in Sources */,

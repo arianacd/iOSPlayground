@@ -149,6 +149,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Color"/>
+                                <connections>
+                                    <segue destination="NAJ-Hw-b2J" kind="presentation" id="gaM-uf-lqu"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePJ-6G-xKi">
                                 <rect key="frame" x="0.0" y="14" width="414" height="44"/>
@@ -196,6 +199,21 @@
                 <exit id="r9J-tH-jkt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="127.90178571428571"/>
+        </scene>
+        <!--ColorPicker-->
+        <scene sceneID="P1L-9F-tPO">
+            <objects>
+                <viewController title="ColorPicker" id="NAJ-Hw-b2J" customClass="ColorPicker" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6j-lc-f6A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="OXg-dK-qEX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1U-ek-4eU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wZh-b8-nQP">
