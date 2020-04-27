@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2E335824571B2400777C89 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E335724571B2400777C89 /* ColorPickerViewController.swift */; };
 		FF7574E3243CB6D300B35044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7574E2243CB6D300B35044 /* AppDelegate.swift */; };
 		FF7574E5243CB6D300B35044 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7574E4243CB6D300B35044 /* SceneDelegate.swift */; };
 		FF7574E7243CB6D300B35044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7574E6243CB6D300B35044 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF2E335724571B2400777C89 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		FF7574DF243CB6D300B35044 /* FindYourColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindYourColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7574E2243CB6D300B35044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7574E4243CB6D300B35044 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				FF7574E4243CB6D300B35044 /* SceneDelegate.swift */,
 				FF7574E6243CB6D300B35044 /* ViewController.swift */,
 				FF7574E8243CB6D300B35044 /* Main.storyboard */,
+				FF2E335724571B2400777C89 /* ColorPickerViewController.swift */,
 				FF82C3762453120E00907704 /* ColorPicker.swift */,
 				FF7ED8C9243E246100DAB467 /* Palette.swift */,
 				FF7574EB243CB6D800B35044 /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 			files = (
 				FF8FC851243F7EDF00D1D6DB /* ColorsTableViewController.swift in Sources */,
 				FF82C3772453120E00907704 /* ColorPicker.swift in Sources */,
+				FF2E335824571B2400777C89 /* ColorPickerViewController.swift in Sources */,
 				FF7574E7243CB6D300B35044 /* ViewController.swift in Sources */,
 				FF7574E3243CB6D300B35044 /* AppDelegate.swift in Sources */,
 				FF7574E5243CB6D300B35044 /* SceneDelegate.swift in Sources */,

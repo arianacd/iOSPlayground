@@ -150,7 +150,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Color"/>
                                 <connections>
-                                    <segue destination="NAJ-Hw-b2J" kind="presentation" id="gaM-uf-lqu"/>
+                                    <segue destination="NAJ-Hw-b2J" kind="presentation" id="QD4-3a-a3h"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePJ-6G-xKi">
@@ -191,7 +191,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="if9-jb-t6i"/>
                     <connections>
-                        <outlet property="colorPicker" destination="41V-ur-Qas" id="7Oo-Qy-qS5"/>
                         <outlet property="paletteName" destination="IKb-Cs-maa" id="Beb-hh-n4K"/>
                     </connections>
                 </viewController>
@@ -203,17 +202,27 @@
         <!--ColorPicker-->
         <scene sceneID="P1L-9F-tPO">
             <objects>
-                <viewController title="ColorPicker" id="NAJ-Hw-b2J" customClass="ColorPicker" sceneMemberID="viewController">
+                <viewController title="ColorPicker" id="NAJ-Hw-b2J" customClass="ColorPickerViewController" customModule="FindYourColors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6j-lc-f6A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-aF-yNm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OXg-dK-qEX"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="PuI-aF-yNm" id="TTG-eT-WZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1U-ek-4eU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2813" y="128"/>
+            <point key="canvasLocation" x="2811.594202898551" y="127.90178571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wZh-b8-nQP">
