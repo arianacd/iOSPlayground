@@ -11,6 +11,7 @@ import UIKit
 class ColorPickerViewController: UIViewController {
 
     @IBOutlet weak var pickerView: UIView!
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class ColorPickerViewController: UIViewController {
             }
             
             self!.pickerView.addSubview(colorPickerView)
+            self!.pickerView.didAddSubview(colorPickerView)
 
         }
 

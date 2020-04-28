@@ -160,7 +160,7 @@
                                     <navigationItem title="Add Palette" id="hRc-GM-tSt">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ba6-XO-cTI">
                                             <connections>
-                                                <action selector="cancel:" destination="eYA-lR-MEQ" id="9Px-z4-Uou"/>
+                                                <action selector="cancelWithSegue:" destination="eYA-lR-MEQ" id="FJ4-ZK-7wZ"/>
                                                 <segue destination="r9J-tH-jkt" kind="unwind" identifier="cancelSegue" unwindAction="cancelWithSegue:" id="tyd-fH-4Yv"/>
                                             </connections>
                                         </barButtonItem>
@@ -207,13 +207,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-aF-yNm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-aF-yNm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PuI-aF-yNm" firstAttribute="trailing" secondItem="OXg-dK-qEX" secondAttribute="trailing" constant="10" id="D9C-PY-0T3"/>
+                            <constraint firstItem="OXg-dK-qEX" firstAttribute="bottom" secondItem="PuI-aF-yNm" secondAttribute="bottom" constant="350" id="XBG-33-MAm"/>
+                            <constraint firstItem="PuI-aF-yNm" firstAttribute="leading" secondItem="OXg-dK-qEX" secondAttribute="leading" constant="10" id="klQ-fH-XXk"/>
+                            <constraint firstItem="PuI-aF-yNm" firstAttribute="top" secondItem="OXg-dK-qEX" secondAttribute="top" constant="10" id="qug-Pg-Lpi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OXg-dK-qEX"/>
                     </view>
                     <connections>
