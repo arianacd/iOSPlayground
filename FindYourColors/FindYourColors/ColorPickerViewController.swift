@@ -23,7 +23,7 @@ class ColorPickerViewController: UIViewController {
                 self?.view.backgroundColor = color
                 
             }
-            
+            // trying to make the color picker appear
             self!.pickerView.addSubview(colorPickerView)
             self!.pickerView.didAddSubview(colorPickerView)
 
