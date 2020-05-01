@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func cancel(segue:UIStoryboardSegue) {
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func done(_ sender: UIBarButtonItem) {
         delegate?.addNewPalette(palette: Palette(name: paletteName.text!, colors: [UIColor(red: 0.4, green: 0.3, blue: 0.8, alpha: 1.0)]))

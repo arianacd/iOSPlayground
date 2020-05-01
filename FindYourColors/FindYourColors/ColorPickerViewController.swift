@@ -15,7 +15,7 @@ class ColorPickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let colorPickerView = ColorPickerView()
+        let colorPickerView = ColorPickerView(frame: CGRect(x: 0, y: 0, width: 394, height: 438))
         colorPickerView.onColorDidChange = { [weak self] color in
             DispatchQueue.main.async {
 
@@ -24,10 +24,10 @@ class ColorPickerViewController: UIViewController {
                 
             }
             // trying to make the color picker appear
-            self!.pickerView.addSubview(colorPickerView)
-            self!.pickerView.didAddSubview(colorPickerView)
+          
 
         }
+        pickerView.addSubview(colorPickerView)
 
         // Do any additional setup after loading the view.
     }
