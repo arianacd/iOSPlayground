@@ -206,30 +206,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-aF-yNm">
-                                <rect key="frame" x="10" y="10" width="394" height="438"/>
+                                <rect key="frame" x="10" y="80" width="394" height="475"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsy-Vx-FRa">
+                                <rect key="frame" x="44" y="680" width="142.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7W-XH-kin">
-                                <rect key="frame" x="266" y="571" width="128" height="128"/>
+                                <rect key="frame" x="271" y="641" width="115" height="114"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="chosenColor"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Color:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-Y7-zh2">
-                                <rect key="frame" x="20" y="609" width="194" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="PuI-aF-yNm" firstAttribute="trailing" secondItem="OXg-dK-qEX" secondAttribute="trailing" constant="-10" id="4XA-aE-Tm2"/>
-                            <constraint firstItem="OXg-dK-qEX" firstAttribute="bottom" secondItem="PuI-aF-yNm" secondAttribute="bottom" constant="360" id="8p0-Iv-WDq"/>
-                            <constraint firstItem="A7W-XH-kin" firstAttribute="leading" secondItem="OXg-dK-qEX" secondAttribute="leading" constant="266" id="Is0-K2-B3t"/>
-                            <constraint firstItem="A7W-XH-kin" firstAttribute="top" secondItem="PuI-aF-yNm" secondAttribute="bottom" constant="123" id="PyX-c6-zt3"/>
-                            <constraint firstItem="OXg-dK-qEX" firstAttribute="trailing" secondItem="A7W-XH-kin" secondAttribute="trailing" constant="20" id="UJT-4i-rqe"/>
-                            <constraint firstItem="PuI-aF-yNm" firstAttribute="leading" secondItem="OXg-dK-qEX" secondAttribute="leading" constant="10" id="lDC-5o-P4m"/>
-                            <constraint firstItem="OXg-dK-qEX" firstAttribute="bottom" secondItem="A7W-XH-kin" secondAttribute="bottom" constant="109" id="uOA-Xx-tXN"/>
-                            <constraint firstItem="PuI-aF-yNm" firstAttribute="top" secondItem="OXg-dK-qEX" secondAttribute="top" constant="10" id="wam-kU-Ffg"/>
+                            <constraint firstItem="PuI-aF-yNm" firstAttribute="top" secondItem="OXg-dK-qEX" secondAttribute="top" constant="80" id="2rd-1i-IyP"/>
+                            <constraint firstItem="OXg-dK-qEX" firstAttribute="trailing" secondItem="A7W-XH-kin" secondAttribute="trailing" constant="28" id="4yw-kH-itA"/>
+                            <constraint firstItem="rsy-Vx-FRa" firstAttribute="leading" secondItem="OXg-dK-qEX" secondAttribute="leading" constant="44" id="5KI-jL-0By"/>
+                            <constraint firstItem="A7W-XH-kin" firstAttribute="leading" secondItem="rsy-Vx-FRa" secondAttribute="trailing" constant="84.5" id="J48-sy-4aX"/>
+                            <constraint firstItem="OXg-dK-qEX" firstAttribute="bottom" secondItem="A7W-XH-kin" secondAttribute="bottom" constant="53" id="Paq-nq-4oz"/>
+                            <constraint firstItem="rsy-Vx-FRa" firstAttribute="top" secondItem="PuI-aF-yNm" secondAttribute="bottom" constant="125" id="QFO-DK-C4r"/>
+                            <constraint firstItem="PuI-aF-yNm" firstAttribute="leading" secondItem="OXg-dK-qEX" secondAttribute="leading" constant="10" id="ShN-c0-JuZ"/>
+                            <constraint firstItem="A7W-XH-kin" firstAttribute="top" secondItem="PuI-aF-yNm" secondAttribute="bottom" constant="86" id="dQG-FO-CHZ"/>
+                            <constraint firstItem="OXg-dK-qEX" firstAttribute="trailing" secondItem="PuI-aF-yNm" secondAttribute="trailing" constant="10" id="jPj-A0-too"/>
+                            <constraint firstItem="OXg-dK-qEX" firstAttribute="bottom" secondItem="rsy-Vx-FRa" secondAttribute="bottom" constant="92" id="z3A-sf-NP6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OXg-dK-qEX"/>
                     </view>
