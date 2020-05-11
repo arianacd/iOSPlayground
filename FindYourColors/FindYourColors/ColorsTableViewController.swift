@@ -78,7 +78,12 @@ class ColorsTableViewController: UITableViewController, PaletteDelegate {
     }
     
   
-    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            palettes.remove(at: indexPath.row)
+            tableView.deleteRows(at:[indexPath], with: UITableView.RowAnimation.automatic)
+        }
+    }
     
     
     
