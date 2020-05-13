@@ -13,17 +13,21 @@ class ColorPickerViewController: UIViewController {
     @IBOutlet weak var pickerView: UIView!
         
     
+    @IBOutlet weak var chosenColor: UIView!
+    
+    var newColor: UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let colorPickerView = ColorPickerView(frame: CGRect(x: 0, y: 0, width: 394, height: 475))
-        let chosenColorView = UIView()
         colorPickerView.onColorDidChange = { [weak self] color in
             DispatchQueue.main.async {
 
                 // use picked color for your needs here...
-                self?.view.backgroundColor = color
+                //self?.view.backgroundColor = color
                 
-                chosenColorView.backgroundColor = color
+                self?.chosenColor.backgroundColor = color
+                self?.newColor = color
                 
             }
             // trying to make the color picker appear
@@ -31,7 +35,7 @@ class ColorPickerViewController: UIViewController {
 
         }
         pickerView.addSubview(colorPickerView)
-        pickerView.addSubview(chosenColorView)
+
 
         // Do any additional setup after loading the view.
     }

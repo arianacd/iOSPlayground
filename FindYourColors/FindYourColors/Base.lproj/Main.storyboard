@@ -150,7 +150,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Color"/>
                                 <connections>
-                                    <segue destination="NAJ-Hw-b2J" kind="presentation" id="QD4-3a-a3h"/>
+                                    <action selector="addColor:" destination="eYA-lR-MEQ" eventType="touchUpInside" id="RSV-XT-Dz1"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePJ-6G-xKi">
@@ -184,13 +184,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J61-83-7w2">
+                                <rect key="frame" x="154" y="324" width="240" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddZ-nd-ucW">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLD-8b-m1Z">
+                                <rect key="frame" x="202" y="610" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iLc-RA-gn3"/>
                     </view>
                     <navigationItem key="navigationItem" id="if9-jb-t6i"/>
                     <connections>
+                        <outlet property="chosenColor" destination="jLD-8b-m1Z" id="u9c-eb-lbo"/>
                         <outlet property="paletteName" destination="IKb-Cs-maa" id="Beb-hh-n4K"/>
+                        <outlet property="pickerView" destination="ddZ-nd-ucW" id="FzT-as-9JS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfz-1Y-y2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -202,21 +221,21 @@
             <objects>
                 <viewController title="ColorPicker" id="NAJ-Hw-b2J" customClass="ColorPickerViewController" customModule="FindYourColors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6j-lc-f6A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-aF-yNm">
-                                <rect key="frame" x="10" y="80" width="394" height="475"/>
+                                <rect key="frame" x="10" y="124" width="394" height="485"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsy-Vx-FRa">
-                                <rect key="frame" x="44" y="680" width="142.5" height="36"/>
+                                <rect key="frame" x="44" y="734" width="142.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7W-XH-kin">
-                                <rect key="frame" x="271" y="641" width="115" height="114"/>
+                                <rect key="frame" x="271" y="695" width="115" height="114"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="chosenColor"/>
                             </view>
@@ -237,6 +256,7 @@
                         <viewLayoutGuide key="safeArea" id="OXg-dK-qEX"/>
                     </view>
                     <connections>
+                        <outlet property="chosenColor" destination="A7W-XH-kin" id="x2W-td-rew"/>
                         <outlet property="pickerView" destination="PuI-aF-yNm" id="TTG-eT-WZL"/>
                     </connections>
                 </viewController>
