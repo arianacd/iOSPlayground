@@ -57,7 +57,13 @@
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uR8-cf-sO9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
-                                    <navigationItem title="Title" id="9j2-V9-PMO"/>
+                                    <navigationItem title="Title" id="9j2-V9-PMO">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ETN-kc-G8R">
+                                            <connections>
+                                                <action selector="done:" destination="kO3-v9-r8U" id="c1X-fi-2fF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="contents " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VT9-AK-NXV">
@@ -133,6 +139,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmX-Fw-Rat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kO3-v9-r8U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1093" y="851"/>
         </scene>
@@ -145,7 +152,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41V-ur-Qas">
-                                <rect key="frame" x="285" y="204" width="109" height="42"/>
+                                <rect key="frame" x="220" y="241" width="109" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Color"/>
@@ -171,19 +178,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKb-Cs-maa">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Palette Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKb-Cs-maa">
                                 <rect key="frame" x="20" y="94" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Colors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJV-Sb-dNz">
-                                <rect key="frame" x="20" y="210" width="131" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J61-83-7w2">
                                 <rect key="frame" x="154" y="324" width="240" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -197,50 +197,57 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLD-8b-m1Z">
-                                <rect key="frame" x="202" y="610" width="145" height="128"/>
+                                <rect key="frame" x="202" y="564" width="145" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-oF-FR5">
-                                <rect key="frame" x="20" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="241" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U41-gp-27G">
-                                <rect key="frame" x="71" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="291" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTR-w4-snl">
-                                <rect key="frame" x="120" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="341" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFr-qx-g0E">
-                                <rect key="frame" x="171" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="390" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecr-MT-3Zu">
-                                <rect key="frame" x="222" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="441" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-lQ-LoT">
-                                <rect key="frame" x="270" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="487" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzP-MT-39M">
-                                <rect key="frame" x="360" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="593" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oru-nf-lH0">
-                                <rect key="frame" x="317" y="778" width="30" height="30"/>
+                                <rect key="frame" x="21" y="538" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Colors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJV-Sb-dNz">
+                                <rect key="frame" x="20" y="184" width="130" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iLc-RA-gn3"/>
@@ -250,6 +257,14 @@
                         <outlet property="chosenColor" destination="jLD-8b-m1Z" id="u9c-eb-lbo"/>
                         <outlet property="paletteName" destination="IKb-Cs-maa" id="Beb-hh-n4K"/>
                         <outlet property="pickerView" destination="ddZ-nd-ucW" id="FzT-as-9JS"/>
+                        <outletCollection property="chosenColors" destination="aEF-oF-FR5" collectionClass="NSMutableArray" id="EBL-LO-umP"/>
+                        <outletCollection property="chosenColors" destination="U41-gp-27G" collectionClass="NSMutableArray" id="jsd-JQ-rK0"/>
+                        <outletCollection property="chosenColors" destination="vTR-w4-snl" collectionClass="NSMutableArray" id="bAE-AX-TWl"/>
+                        <outletCollection property="chosenColors" destination="EFr-qx-g0E" collectionClass="NSMutableArray" id="NOL-GN-Tfc"/>
+                        <outletCollection property="chosenColors" destination="ecr-MT-3Zu" collectionClass="NSMutableArray" id="gtB-Ed-M1b"/>
+                        <outletCollection property="chosenColors" destination="TGt-lQ-LoT" collectionClass="NSMutableArray" id="vVM-Wg-I4g"/>
+                        <outletCollection property="chosenColors" destination="Oru-nf-lH0" collectionClass="NSMutableArray" id="O0k-bm-XyI"/>
+                        <outletCollection property="chosenColors" destination="rzP-MT-39M" collectionClass="NSMutableArray" id="jqu-Po-HkP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfz-1Y-y2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

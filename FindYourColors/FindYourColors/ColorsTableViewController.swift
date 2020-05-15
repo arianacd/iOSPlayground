@@ -86,7 +86,7 @@ class ColorsTableViewController: UITableViewController, PaletteDelegate {
     }
     
     
-    
+ 
     
   
 
@@ -144,7 +144,10 @@ class ColorsTableViewController: UITableViewController, PaletteDelegate {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-   
+    @IBAction func done(_ sender: Any){
+    dismiss(animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPalette" {
             let newPaletteViewController = segue.destination as? NewPaletteViewController

@@ -16,9 +16,12 @@ class ViewController: UIViewController {
     
     var addedPalette: Palette?
     var newColor: UIColor?
+    var paletteEntry: Palette?
+
     
     @IBOutlet weak var paletteName: UITextField!
 
+    @IBOutlet var chosenColors: [UIView]!
     var delegate: PaletteDelegate?
     
     
@@ -63,5 +66,12 @@ class ViewController: UIViewController {
         delegate?.addNewPalette(palette: Palette(name: paletteName.text!, colors: colors ))
         dismiss(animated: true, completion: nil)
     }
-}
+//    func setViewColors() {
+//        let numColors: Int = newPalette.chosenColor.count
+//        for x in 0..<numColors {
+//            chosenColors[x].backgroundColor = newPalette.chosenColor[x]
+//
+//    }
+//}
 
+}
