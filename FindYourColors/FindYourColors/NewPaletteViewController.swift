@@ -17,6 +17,8 @@ class NewPaletteViewController: UIViewController {
 //    var palette = [String]()
 
     
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+    }
     
     @IBOutlet weak var paletteContents: UITextView!
     var paletteEntry: Palette?

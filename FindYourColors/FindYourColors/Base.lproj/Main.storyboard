@@ -60,7 +60,7 @@
                                     <navigationItem title="Title" id="9j2-V9-PMO">
                                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ETN-kc-G8R">
                                             <connections>
-                                                <action selector="done:" destination="kO3-v9-r8U" id="c1X-fi-2fF"/>
+                                                <action selector="cancel:" destination="u8g-Ck-bUf" id="PQ4-wS-IHC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -139,7 +139,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmX-Fw-Rat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="kO3-v9-r8U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1093" y="851"/>
         </scene>
