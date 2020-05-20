@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var delegate: PaletteDelegate?
     
     
+    
     @IBOutlet weak var chosenColor: UIView!
     
     @IBOutlet weak var pickerView: UIView!
@@ -66,12 +67,14 @@ class ViewController: UIViewController {
         delegate?.addNewPalette(palette: Palette(name: paletteName.text!, colors: colors ))
         dismiss(animated: true, completion: nil)
     }
-//    func setViewColors() {
-//        let numColors: Int = newPalette.chosenColor.count
-//        for x in 0..<numColors {
-//            chosenColors[x].backgroundColor = newPalette.chosenColor[x]
-//
+    func setViewColors() {
+        let numColors: Int = newPalette.chosenColor.count
+        for x in 0..<numColors {
+            chosenColors[x].backgroundColor = newPalette.chosenColor[x]
+
 //    }
 //}
 
+}
+}
 }
