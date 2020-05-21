@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var paletteName: UITextField!
 
     @IBOutlet var chosenColors: [UIView]!
+    
     var delegate: PaletteDelegate?
     
     
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var chosenColor: UIView!
     
     @IBOutlet weak var pickerView: UIView!
+    
+    var currentPosition = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +44,8 @@ class ViewController: UIViewController {
                 
                 self?.chosenColor.backgroundColor = color
                 self?.newColor = color
+                
+                
                 
             }
             // trying to make the color picker appear
@@ -62,19 +67,25 @@ class ViewController: UIViewController {
     @IBAction func addColor(_ sender: UIButton) {
         // add the selected color the array
         colors.append((newColor)!)
+        chosenColors[currentPosition].backgroundColor = newColor
+        currentPosition += 1
     }
     @IBAction func done(_ sender: UIBarButtonItem) {
         delegate?.addNewPalette(palette: Palette(name: paletteName.text!, colors: colors ))
         dismiss(animated: true, completion: nil)
     }
-    func setViewColors() {
-        let numColors: Int = newPalette.chosenColor.count
-        for x in 0..<numColors {
-            chosenColors[x].backgroundColor = newPalette.chosenColor[x]
 
-//    }
-//}
+
+    
+
+    
+//func showColors() {
+//    let numColors: Int = newPalette.chosenColors.count
+//    for x in 0..<numColors {
+//        chosenColors[x].backgroundColor = newPalette.chosenColors[x]
+//
+////    }
+////}
 
 }
-}
-}
+
