@@ -76,6 +76,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func undo(_ sender: UIButton) {
+        currentPosition -= 1
+        currentPosition.backgroundColor == lightGray
+        
+        
+    }
     
 
     
