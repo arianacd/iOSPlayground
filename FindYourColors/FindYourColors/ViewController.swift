@@ -75,11 +75,11 @@ class ViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-
+//https://stackoverflow.com/questions/24112272/uiview-background-color-in-swift/24112287
     @IBAction func undo(_ sender: UIButton) {
         currentPosition -= 1
-        currentPosition.backgroundColor == lightGray
-        
+        chosenColors[currentPosition].backgroundColor = UIColor.lightGray
+
         
     }
     
@@ -93,5 +93,6 @@ class ViewController: UIViewController {
 ////    }
 ////}
 
-}
 
+
+}
