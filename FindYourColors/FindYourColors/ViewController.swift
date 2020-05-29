@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+   
 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
@@ -83,6 +83,12 @@ class ViewController: UIViewController {
         
     }
     
+//https://stackoverflow.com/questions/27975321/how-do-i-show-and-or-hide-a-subview-using-swift
+//       func hideView(){
+//        if chosenColors.currentPosition != chosenColor{
+//            chosenColors.currentPosition.isHidden = true
+//
+//       }
 
     
 //func showColors() {
