@@ -69,6 +69,8 @@ class ViewController: UIViewController {
         colors.append((newColor)!)
         chosenColors[currentPosition].backgroundColor = newColor
         currentPosition += 1
+      
+        
     }
     @IBAction func done(_ sender: UIBarButtonItem) {
         delegate?.addNewPalette(palette: Palette(name: paletteName.text!, colors: colors ))
@@ -85,6 +87,11 @@ class ViewController: UIViewController {
     
 //https://stackoverflow.com/questions/27975321/how-do-i-show-and-or-hide-a-subview-using-swift
 //       func hideView(){
+//        if chosenColors[currentPosition].backgroundColor = UIColor.lightGray{
+//                  chosenColors[currentPosition].backgroundColor = UIColor.white
+//              }
+    
+    
 //        if chosenColors.currentPosition != chosenColor{
 //            chosenColors.currentPosition.isHidden = true
 //

@@ -48,6 +48,9 @@ class NewPaletteViewController: UIViewController {
         let numColors: Int = paletteEntry!.colors.count
         for x in 0..<numColors {
             colorviews[x].backgroundColor = paletteEntry?.colors[x]
+//            if colorviews[x].backgroundColor = UIColor.lightGray{
+//                colorviews[x].backgroundColor = UIColor.white
+//            }
             
         }
         
