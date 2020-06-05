@@ -193,7 +193,7 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Palette Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKb-Cs-maa">
-                                <rect key="frame" x="30" y="94" width="364" height="34"/>
+                                <rect key="frame" x="135" y="94" width="144" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -302,10 +302,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="IKb-Cs-maa" firstAttribute="top" secondItem="ePJ-6G-xKi" secondAttribute="bottom" constant="36" id="98L-VB-ALt"/>
-                            <constraint firstItem="IKb-Cs-maa" firstAttribute="leading" secondItem="iLc-RA-gn3" secondAttribute="leading" constant="30" id="RrF-bU-fAY"/>
-                            <constraint firstItem="RQZ-bV-4Ut" firstAttribute="top" secondItem="IKb-Cs-maa" secondAttribute="bottom" constant="30" id="YVH-jJ-jq5"/>
-                            <constraint firstItem="iLc-RA-gn3" firstAttribute="trailing" secondItem="IKb-Cs-maa" secondAttribute="trailing" constant="20" id="uIb-0g-YuO"/>
+                            <constraint firstItem="IKb-Cs-maa" firstAttribute="top" secondItem="ePJ-6G-xKi" secondAttribute="bottom" constant="30" id="7xl-Ux-CF7"/>
+                            <constraint firstItem="IKb-Cs-maa" firstAttribute="centerX" secondItem="0U4-Ht-5Xi" secondAttribute="centerX" id="DAN-7F-hah"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iLc-RA-gn3"/>
                     </view>
